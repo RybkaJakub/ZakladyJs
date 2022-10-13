@@ -9,7 +9,8 @@
       shrink-to-fit=no" />
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
 </head>
 
 <body>
@@ -27,7 +28,21 @@
                     </p>
                 </blockquote>
                 <div class="bg-info p-3">
-                    <p>Zde bude řešení.</p>
+                    <p>JavaScript je programovací jazyk, který se používá v internetových stránkách.
+
+                        Byl představen v devadesátých letech 20. století, jako reakce na klasické statické internetové
+                        stránky a otevřel prostor pro interaktivní webové aplikace i příjemnější uživatelské rozhraní
+                        doplněné animacemi a 2D i 3D grafikou.</p>
+                    <p><b>Využití:</b></p>
+                    <ul>
+                        <li>Jdou vytvářet různé hry a různé grafické aplikace</li>
+                        <li>Umožňuje vytvořit webové aplikace na straně klienta i serveru</li>
+                        <li>Využívá se na webových stránkách jelikož lze díky něj udělat stránku interaktivní</li>
+                        <li>Nabízí mnoho knihoven k nejrůznějšímu použití</li>
+                        <li><a href="https://worldsbiggestpacman.com/">Pac-man</a></li>
+                        <li><a href="https://littlealchemy.com/">Little Alchemy</a></li>
+                        <li><a href="https://hypnoticowl.com/games/the-wizard/">The Wizard</a></li>
+                    </ul>
                 </div>
             </div>
             <div class="col-sm-6 bg-secondary text-light p-5">
@@ -37,7 +52,22 @@
                     <p class="text-warning">Použij angličtinu!</p>
                 </blockquote>
                 <div class="bg-info p-3">
-                    <p>Zde bude řešení.</p>
+                    <p>
+                    <ol>
+                        <li>Ending statements with semicolon (;) is not required, but highly</li>
+                        <li>JavaScript ignores multiple spaces. You can add white space to your script to make it more
+                            readable. A
+                            good practice is to put spaces around oprators( = + - * /).</li>
+                        <li>For best readability, programmers often like to avoid code lines longer than 80 characters.
+                        </li>
+                        <li>JavaScript statements can be grouped together in code blocks, inside curly brackets (...).
+                            The prupose
+                            of code blocks is to define statements to be executed together.</li>
+                        <li>JavaScript keywords are reserved words. Reserved words cannot be used as names for
+                            variables.</li>
+                        <li>Sibgle line comments start with //. Multi-line comments start with /* and end with */.</li>
+                    </ol>
+                    </p>
                 </div>
             </div>
         </div>
@@ -76,12 +106,12 @@
                     <code>
               let x = 0; // s přiřazením hodnoty<br />
               let x; // bez přiřazení hodnoty<br />
-              let x = null; // ...<br />
-              ... // celé číslo (typ number)<br />
-              ... // reálné číslo (typ number)<br />
-              ... // zápis desetinného čísla pomocí exponentu<br />
-              ... // typ string<br />
-              let prestupny = false // ...<br />
+              let x = null; // vynuluje vše v proměnné<br />
+              let x = 3; // celé číslo (typ number)<br />
+              let y = 4.34; // reálné číslo (typ number)<br />
+              let z = 0.1e2 // zápis desetinného čísla pomocí exponentu<br />
+              let txt = 'Znakový řetězec'; // typ string<br />
+              let prestupny = false // logický typ boolean<br />
             </code>
                 </div>
             </div>
@@ -106,23 +136,23 @@
             </code>
                     <h4>Přiřazovací</h4>
                     <code>
-              ...
+              =, +=, -=, *=, /=, %=, >>= ( posouvá proměnnou vpravo(se znaménkem)), <<=( posouvá proměnnou vlevo(se znaménkem)),>>= ( posouvá proměnnou vpravo(bez znaménka)), !=
             </code>
                     <h4>Logické</h4>
                     <code>
-              ...
+              !, || (operátor vrací true, pokud oba vyrazy jsou pravdivé) , && (operátor vrací true, pokud jsou oba výrazy správně vrátí true, jinak false)
             </code>
                     <h4>Porovnávací</h4>
                     <code>
-              ...
+              == , ===(stejná hodnota a stejný typ), !=, !==(nemá stejnou hodnotu nebo není stejný typ) , >, <, >=, <=
             </code>
                     <h4>Bitové</h4>
                     <code>
-              ...
+              &, |, ^ (Nastaví každý bit na 1, pokud je pouze jeden ze dvou bitů 1), ~(Invertuje všechny bity), >> (Posouvá doprava zatlačením kopií levého nejvíce levého bitu zleva a nechá vypadnout úplně pravé bity), << (Posouvá doleva zatlačením nul zprava a nechá vypadnout bity nejvíce vlevo), >>> (Posouvá doprava zatlačením nul zleva a nechá vypadnout bity nejvíce vpravo)
             </code>
                     <h4>Typové</h4>
                     <code>
-              typeof (typ proměnné), instanceof (...)
+              typeof (typ proměnné), instanceof (testování, zda je objekt daného typu)
             </code>
                 </div>
             </div>
@@ -133,7 +163,8 @@
                         K uvedeným příkladům připište do poznámky, co se stane na webové stránce.
                     </p>
                     <p class="text-warning">
-                        Na konci doplňte aspoň dvě varování, proč bychom se měli vyhýbat použití popup oken v reálných webových aplikacích.
+                        Na konci doplňte aspoň dvě varování, proč bychom se měli vyhýbat použití popup oken v reálných
+                        webových aplikacích.
                     </p>
                 </blockquote>
                 <div class="bg-light text-danger p-3">
@@ -155,7 +186,7 @@
             </code>
                     <hr />
                     <p class="alert alert-primary" role="alert">
-                        Varování:
+                        Varování: Jsou zastaralé, a vypadají podezřele.
                     </p>
                 </div>
             </div>
@@ -174,8 +205,9 @@
                         </li>
                         <li>
                             Řetězec obsahující informace o váze a výšce (s využitím tzv.
-                            <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals">template
-                  literals</a>).
+                            <a
+                                href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals">template
+                                literals</a>).
                         </li>
                         <li>Řetězec obsahující příklad escape sekvencí - uvozovky.</li>
                     </ol>
@@ -189,7 +221,7 @@
                     sedmy.innerHTML = '<p>' + jmeno + ' ' + prijmeni + '</p>';
                     let vaha = 100;
                     let vyska = 188;
-                    sedmy.innerHTML += `<p> Vaha je ${vaha} kg, výška ${vyska} cm</p>`;
+                    sedmy.innerHTML += `<p> Váha je ${vaha} kg, výška ${vyska} cm</p>`;
                     sedmy.innerHTML += '<blockquote>Motto: \'Jíme, abychom žili, nežijeme abychom jedli.\'</blockquote>';
                 </script>
             </div>
@@ -216,11 +248,11 @@
                         let b = Math.floor(Math.random() * 256);
                         return `rgb(${r}, ${g}, ${b})`
                     }
-                    osmy.addEventListener('mouseover', function() {
+                    osmy.addEventListener('mouseover', function () {
                         osmy.style.color = nahodnaBarva();
                         osmy.style.fontSize = '200%';
                     })
-                    osmy.addEventListener('mouseleave', function() {
+                    osmy.addEventListener('mouseleave', function () {
                         this.style.color = 'white';
                         this.style.fontSize = '100%';
                     })
@@ -247,8 +279,8 @@
                 </blockquote>
                 <div class="bg-info p-3">
                     <button id="devatyButton">
-              Zadej číslo
-            </button>
+                        Zadej číslo
+                    </button>
                 </div>
                 <script>
                     function isFloat(n) {
@@ -270,7 +302,7 @@
                             return 'Liche';
                         }
                     }
-                    devatyButton.addEventListener('click', function() {
+                    devatyButton.addEventListener('click', function () {
                         let cislo = prompt('Zadej číslo');
                         console.log(sudeLiche(cislo));
                     });
@@ -290,7 +322,8 @@
                             Součástí funkce "denVTydnu" je zjištění aktuálního data (pomocí objektu Date).
                         </li>
                         <li>Pomocí funkce bude zjištěno číslo dne v týdnu.</li>
-                        <li>S využitím příkazu switch se vypíše český název dne (pro všední dny), nebo údaj "víkend" pro sobotu a neděli.</li>
+                        <li>S využitím příkazu switch se vypíše český název dne (pro všední dny), nebo údaj "víkend" pro
+                            sobotu a neděli.</li>
                         <li>Správnost řešení ověřte výpisem výsledku do popup okna.</li>
                     </ol>
                 </blockquote>
@@ -368,9 +401,9 @@
                         console.log(!(cislo > delitel));
                         return 0;
                     }
-                    dvanacty.addEventListener('click', function() {
+                    dvanacty.addEventListener('click', function () {
                         let nahodne = Math.round(Math.random() * 1000);
-                        dvanacty.innerHTML = `Zadané náhodné číslo ${nahodne} ${prvocislo(nahodne) ? 'je':'není'} prvočíslem`;
+                        dvanacty.innerHTML = `Zadané náhodné číslo ${nahodne} ${prvocislo(nahodne) ? 'je' : 'není'} prvočíslem`;
                     })
                 </script>
             </div>
@@ -388,7 +421,7 @@
                 </div>
                 <script>
                     //trinacty.innerHTML = `Aktuální čas: ${cas.getHours()}:${cas.getMinutes()}:${cas.getSeconds()}`
-                    setInterval(function() {
+                    setInterval(function () {
                         let cas = new Date()
                         trinacty.innerHTML = `<p>Aktuální čas: ${cas.toLocaleTimeString()}</p>`;
                         trinacty.innerHTML += `<p>Aktuální čas: ${cas.toLocaleDateString()}</p>`;
@@ -407,9 +440,8 @@
                 </div>
                 <script>
                     const gallery = ["img/hrad.webp", "img/praha.jpg", "img/staromak.jpg", "img/vltava.jpg"];
-                    setInterval(function() {
+                    setInterval(function () {
                         let obraz = Math.floor(Math.random() * gallery.length);
-                        console.log('tik', obraz);
                         document.getElementById('foto').src = gallery[obraz];
                     }, 3000)
                 </script>
@@ -417,13 +449,19 @@
         </div>
     </main>
     <footer class="text-center mt-5">
-        Jméno Příjmení, třída IT2
+        Jakub Rybka, třída IT2
     </footer>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
